@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/direct-investing" mode="merge"/>
+    <filter root="/content/direct-investing" mode="merge"/>
+    <filter root="/content/dam/direct-investing" mode="merge"/>
+    <filter root="/content/experience-fragments/direct-investing" mode="merge"/>
+</workspaceFilter>

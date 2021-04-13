@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/direct-investing/clientlibs"/>
+    <filter root="/apps/direct-investing/components"/>
+    <filter root="/apps/direct-investing/i18n"/>
+</workspaceFilter>
