@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-CA" xml:lang="en-CA">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="Explore what TD Canada Trust is all about. Learn about our values, initiatives, reporting, news, careers, recent awards, and more.">
+
+<head data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"> 
+
+<sly data-sly-include="head.html"></sly>
+<sly data-sly-call="${clientlib.all@categories='wcm.foundation.components.parsys.allowedcomponents'}"/> 
+
+<sly data-sly-test.clientlibCategories="${currentStyle['clientlibs']}"
+         data-sly-call="${clientlib.all @ categories = clientlibCategories}"></sly>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.all @ categories='direct-investing.base'}" data-sly-unwrap/>
+<script type="text/javascript">
+	var conTextPathVal ="/ca/en/about-td";
+	var infositeUrl = "https://www.tdcanadatrust.com/products-services/banking/getcookie.jsp";
+	var env="LIVE";
+	var omniRequestValue="";
+	var omniRequestSearchValue="";
+	var omniUrl= "https://context.td.com/omnicclient/omniServlet";
+	var maxRecentlyViewed = 3;
+</script>        
+</head>
+<body class="td_rq_descriptor td-descriptor" ng-app="tdctRedesign" ng-controller="tdctRedesignController as a">
+<sly data-sly-include="/libs/wcm/core/components/init/init.jsp"/>
+
+<sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+     		data-sly-repeat.child="${templatedContainer.structureResources}"
+     		data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.all @ categories='clientlibs-body-js.site'}" data-sly-unwrap/>
+</body>
+</html>
