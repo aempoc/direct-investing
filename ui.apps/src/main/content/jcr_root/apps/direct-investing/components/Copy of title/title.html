@@ -1,0 +1,11 @@
+<h1  data-sly-use.title="com.adobe.cq.wcm.core.components.models.Title"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.titleStyle="com.aem.compLib.core.models.Title"
+     data-sly-test.text="${title.text}"
+     id="${component.id}"
+     data-sly-element="${title.type}" class="${titleStyle.alignment} ${titleStyle.cssClass}">
+     <a data-sly-unwrap="${!title.linkURL || title.linkDisabled}" href="${title.linkURL}" class="td-link-standalone"
+        data-cmp-clickable="${title.data ? true : false}">${text}</a>
+</h1>
+<sly data-sly-call="${template.placeholder @ isEmpty=!text}"></sly>
