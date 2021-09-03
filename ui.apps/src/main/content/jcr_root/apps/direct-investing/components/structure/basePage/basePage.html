@@ -15,6 +15,8 @@
 <sly data-sly-test.clientlibCategories="${currentStyle['clientlibs']}"
          data-sly-call="${clientlib.all @ categories = clientlibCategories}"></sly>
 <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.all @ categories='direct-investing.base'}" data-sly-unwrap/>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='component-library.core'}" data-sly-unwrap/>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories=inheritedPageProperties.theme}" data-sly-unwrap/>
 <script type="text/javascript">
 	var conTextPathVal ="/ca/en/about-td";
 	var infositeUrl = "https://www.tdcanadatrust.com/products-services/banking/getcookie.jsp";
